@@ -1,0 +1,29 @@
+{
+  "name": "grafana-plugin-balerter",
+  "version": "1.0.0-alpha.0",
+  "description": "Balerter plugin for grafana",
+  "scripts": {
+    "build": "grafana-toolkit plugin:build",
+    "test": "grafana-toolkit plugin:test",
+    "dev": "grafana-toolkit plugin:dev",
+    "watch": "grafana-toolkit plugin:dev --watch"
+  },
+  "repository": "github:maxim-usikov/grafana-plugin-balerter",
+  "author": "Maxim Usikov<mu.usikov@gmail.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/maxim-usikov/grafana-plugin-balerter/issues",
+    "email": "mu.usikov@gmail.com"
+  },
+  "devDependencies": {
+    "@grafana/data": "next",
+    "@grafana/toolkit": "next",
+    "@grafana/ui": "next"
+  },
+  "resolutions": {
+    "@babel/preset-env": "7.9.0"
+  },
+  "engines": {
+    "node": ">=12"
+  }
+}

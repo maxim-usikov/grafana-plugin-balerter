@@ -1,0 +1,69 @@
+{
+  "type": "app",
+  "name": "Balerter",
+  "id": "maxim-usikov-balerter-app",
+  "info": {
+    "description": "Balerter app for grafana",
+    "author": {
+      "name": "Maxim Usikov",
+      "url": "https://github.com/maxim-usikov"
+    },
+    "keywords": ["balerter", "app"],
+    "logos": {
+      "small": "img/logo.png",
+      "large": "img/logo.png"
+    },
+    "links": [
+      { "name": "Website", "url": "https://github.com/maxim-usikov/grafana-plugin-balerter" },
+      { "name": "License", "url": "https://github.com/maxim-usikov/grafana-plugin-balerter/blob/master/LICENSE" }
+    ],
+    "screenshots": [],
+    "version": "%VERSION%",
+    "updated": "%TODAY%"
+  },
+  "includes": [
+    {
+      "type": "page",
+      "name": "Root Page (react)",
+      "path": "/a/maxim-usikov-balerter-app",
+      "role": "Viewer",
+      "addToNav": true,
+      "defaultNav": true
+    },
+    {
+      "type": "page",
+      "name": "Root Page (tab B)",
+      "path": "/a/maxim-usikov-balerter-app/?tab=B",
+      "role": "Viewer",
+      "addToNav": true
+    },
+    {
+      "type": "page",
+      "name": "React Config",
+      "path": "/plugins/maxim-usikov-balerter-app/?page=page2",
+      "role": "Admin",
+      "addToNav": true
+    },
+    {
+      "type": "dashboard",
+      "name": "Streaming Example",
+      "path": "dashboards/streaming.json"
+    },
+    {
+      "type": "dashboard",
+      "name": "Lots of Stats",
+      "path": "dashboards/stats.json"
+    },
+    {
+      "type": "page",
+      "name": "Angular Page",
+      "component": "AngularExamplePageCtrl",
+      "role": "Viewer",
+      "addToNav": true
+    }
+  ],
+  "dependencies": {
+    "grafanaVersion": "6.7.x",
+    "plugins": []
+  }
+}

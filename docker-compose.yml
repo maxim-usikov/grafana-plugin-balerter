@@ -1,0 +1,9 @@
+# for local development
+version: '3.7'
+services:
+  grafana:
+    build: .
+    ports:
+    - '3000:3000'
+    volumes:
+    - '.:/var/lib/grafana/plugins/grafana-plugin-balerter'
